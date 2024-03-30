@@ -125,7 +125,7 @@ USE_TZ = True
 STATIC_URL = 'templates/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / "templates/static",
+    BASE_DIR / "templates/static/",
 ]
 
 # Default primary key field type

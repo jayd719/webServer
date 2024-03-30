@@ -9,4 +9,7 @@ DATA={
 
 
 def main(requests):
-    return render(requests,f'components/dashboard.html',DATA)
+    return render(requests,f'components/features.html',DATA)
+
+def projects(requests):
+    return render(requests,f'components/projects.html',DATA)
