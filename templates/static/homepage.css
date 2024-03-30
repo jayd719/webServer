@@ -144,13 +144,6 @@ body{
 } }
 
 
-
-
-
-
-
-
-
 .btn1 {
   border: none;
   height: 3em;
@@ -335,8 +328,8 @@ body{
   background-color: #40476D;
   z-index: -2;
   margin-left: -20%;
-
 }
+
 .wave {
   position: absolute;
   width: 180%;
