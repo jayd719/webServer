@@ -27,14 +27,15 @@
     <link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'styles.css'%}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-    {% include 'components/navbar.html'%}
-    <div class="h-90 mt-2container-fluid" style="height: 100vh; overflow-y: scroll;">  
+  <body class="bg-gradient" >
+    <div class="h-90 mt-2container-fluid" style="height: 100vh; overflow-y: scroll; ">  
       {% block login-Form%}
       {% endblock%}
-
     </div>
   <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
 

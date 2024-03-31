@@ -8,7 +8,7 @@
   }
 body {
   overflow: hidden;
-  background-color: var(--body);
+
 }
 
 .b-example-divider {
@@ -17,9 +17,27 @@ body {
   background-color: rgba(0, 0, 0, 0.009);
   border: solid rgba(0, 0, 0, 0.15);
   border-width: 1px 1px;
-  box-shadow: inset 0 0.25em 0.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.5em 1.5em rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 0.25em 0.5em rgba(0, 0, 0, 0.1),;
 }
 
 
+
+.eml, .eml img{
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.eml:hover{
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+
+.eml:hover img{
+  transform: rotate(-5deg) scale(1.25);
+}
   
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 900;
+  font-style: normal;
+}
