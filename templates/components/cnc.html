@@ -1,0 +1,23 @@
+{% load static %}
+
+<div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+<div class="list-group">
+
+  {% for m in machines %}
+  {% if m.show %}
+  <div href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 shadow" aria-current="true">
+    <img src="{% static 'images/machines/{m.name}.png'%}" alt="twbs" width="102" height="102" class="rounded-circle flex-shrink-0 shadow-sm"/>
+    <div class="d-flex gap-2 w-100 justify-content-between">
+      <div>
+        <h6 class="mb-0">{{m.name}}</h6>
+        <p class="mb-0 opacity-75">
+          {{m.des}}
+        </p>
+      </div>
+      <small class="opacity-50 text-nowrap">now</small>
+    </div>
+  </div>
+  {% endif%}
+  {%endfor%}
+</div>
+</div>
