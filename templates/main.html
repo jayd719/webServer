@@ -13,7 +13,7 @@
     {% elif message%}
     <title>Invalid Work Order</title>
     {% else %}
-    <title>Live</title>
+    <title>JD</title>
     {% endif%}
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/">
 
@@ -23,20 +23,19 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/heroes/">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
-    <link rel='stylesheet' href='https://demo.themesberg.com/pixel-pro/css/pixel.css'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'styles.css'%}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'contact.css'%}">
   </head>
 
-  <body class="bg-gradient" >
-    <div class="h-90 mt-2container-fluid" style="height: 100vh; overflow-y: scroll; ">  
-      {% block login-Form%}
+
+  <body class="cover-container" style="background-color: #ffffff;" >
+    {% include 'components/navbar.html'%}
+      {% block content%}
       {% endblock%}
-    </div>
   <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
 
     </body>

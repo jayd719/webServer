@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% block content%}
+
+{% include 'components/introText.html'%}
+{% include 'components/contact.html'%}
+<!-- divider -->
+<div class="div" style="height: 10vh;"></div>
+<div class="container px-5">
+    {% include 'components/secondCont.html'%}
+    <div class="div" style="height: 10vh;"></div>
+    {% include 'components/mainFeatures.html'%}
+</div>
+{% include 'components/hompage_thirdSection.html'%}
+<div class="div" style="height: 10vh;"></div>
+{% include 'components/homepage_fourthSection.html'%}
+{% include 'components/footer.html'%}
+
+
+{%endblock%}

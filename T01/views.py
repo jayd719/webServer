@@ -13,7 +13,7 @@ def main(requests):
     'machines':CNC.objects.all()
 }   
     
-    return render(requests,f'components/features.html',DATA)
+    return render(requests,f'components/homepage.html',DATA)
 
 def projects(requests):
     DATA={
@@ -21,4 +21,4 @@ def projects(requests):
     'pythonLibs': PythonLibs.objects.all(),
     'machines':CNC.objects.all()
 }   
-    return render(requests,f'components/projects.html',DATA)
+    return render(requests,f'projects/projects.html',DATA)

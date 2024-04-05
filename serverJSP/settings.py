@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 global COMPANYNAME
 
-COMPANYNAME ='Live'
+COMPANYNAME ='JD|Software Developer'
 
 
 from pathlib import Path
