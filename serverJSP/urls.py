@@ -22,6 +22,5 @@ from homepage.views import landingPage_1
 from homepage.views import projects
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('projects/',projects,name='projects'),
     path('',include('T01.urls')),
 ]
