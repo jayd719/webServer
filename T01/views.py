@@ -1,9 +1,12 @@
-from django.shortcuts import render,HttpResponse
-
+from django.shortcuts import render
 from serverJSP.settings import COMPANYNAME
 from .models import PythonLibs 
 from .models import CNC
-
+import json
+from django.http import JsonResponse
+from django.views.decorators.csrf import csrf_exempt
+from json import loads
+from .functions import get_location_name
 
 
 def main(requests):
@@ -22,3 +25,27 @@ def projects(requests):
     'machines':CNC.objects.all()
 }   
     return render(requests,f'projects/projects.html',DATA)
+
+
+@csrf_exempt
+def locationFromCords(request):
+    """request - the HTTP request object (HttpRequest)
+    Returns:
+        JSON response indicating the success or failure of the operation (JsonResponse)
+    -------------------------------------------------------
+    """
+    if request.method == 'POST':
+        try:
+            cordinates = json.loads(request.body.decode('utf-8'))['data']
+            # print(cordinates)
+            city=get_location_name(cordinates[:2])
+            print(city)
+            return JsonResponse({'success': True})
+        except json.JSONDecodeError as e:
+            return JsonResponse({'error': 'Invalid JSON format'}, status=400)
+    return JsonResponse({'error': 'Invalid request method'}, status=405)
+
+
+
+def engineeringPage(requests):
+    return render(requests,f'EngineeringPage/engineeringPage.html')

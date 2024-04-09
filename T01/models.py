@@ -18,3 +18,7 @@ class CNC(models.Model):
     name = models.CharField(max_length=20,primary_key = True)
     des=models.TextField()
     show=models.BooleanField(default=True)
+    
+
+class User(models.Model):
+    pass
