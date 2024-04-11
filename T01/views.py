@@ -5,8 +5,7 @@ from .models import CNC
 import json
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
-from json import loads
-from .functions import get_location_name
+
 
 
 def main(requests):
@@ -37,9 +36,7 @@ def locationFromCords(request):
     if request.method == 'POST':
         try:
             cordinates = json.loads(request.body.decode('utf-8'))['data']
-            # print(cordinates)
-            city=get_location_name(cordinates[:2])
-            print(city)
+
             return JsonResponse({'success': True})
         except json.JSONDecodeError as e:
             return JsonResponse({'error': 'Invalid JSON format'}, status=400)
