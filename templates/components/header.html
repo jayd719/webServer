@@ -1,21 +1,21 @@
 {% load static %}
-<div id="top-notch" class="container-fluid d-flex align-items-center justify-content-end gap-0 px-5 text-light border-dark border-bottom"  style="background-color: #0b051d; font-size: smaller;">
-  <a href="#compsi" class="nav-link m-1" >Computer Science Student |</a>
-  <a href="{% url 'engineeringPage'%}" class="nav-link m-0" >Manufacturing Engineer</a>
+<div id="top-notch" class="container-fluid border-bottom border-dark"  style="background-color: #0b051d; font-size: smaller;">
+  <ul class="nav justify-content-end align-items-end">
+    <li class="nav-item "><a href="#" class="nav-link px-2 text-white">Computer Science Student</a></li>
+    <li class="nav-item"><a href="{% url 'engineeringPage'%}" class="nav-link px-2 text-white">Manufacturing Engineer</a></li>
+  </ul>
 </div>
 
 <nav class="navbar navbar-expand-md sticky-top border-bottom" data-bs-theme="dark" style="background-color: #0b051d;">
     <div class="container-fluid px-4 py-0">
-      <a class="navbar-brand d-md-none" href="{% url 'home-main' %}">
-        <svg class="bi" width="24" height="24"><use xlink:href="#aperture"></use></svg>
-        Aperture
+      <a class="navbar-brand d-md-none text-white fs-2 fw-bold px-5" href="{% url 'home-main' %}">
+       JD
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasLabel">Aperture</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -35,3 +35,6 @@
     </div>
   </nav>
   {% include 'components/contact.html'%}
+
+
+  
