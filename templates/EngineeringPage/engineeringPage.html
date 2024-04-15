@@ -2,6 +2,10 @@
 {% load static %}
 {% block content%}
 
+{% include 'EngineeringPage/setupSheet.html'%}
+<div style="height: 10vh;"></div>
+
+
 <video width="100%" class="name-image-before" autoplay muted loop playback="3">
   <source src="{% static 'videos/MachSim_Video_20231107_101540.mp4'%}" type="video/mp4">
 Your browser does not support the video tag.
@@ -9,11 +13,19 @@ Your browser does not support the video tag.
 
 {% include 'EngineeringPage/section.html'%}
 
+<div style="height: 15vh;"></div>
+<div class="container-fluid my-5 bg-body-tertiary">
+  <div class="p-5 text-center rounded-3">
+    <h1 class="text-body-emphasis">Basic jumbotron</h1>
+    <p class="lead">
+      This is a simple Bootstrap jumbotron that sits within a <code>.container</code>, recreated with built-in utility classes.
+    </p>
+  </div>
+</div>
+<div class="container" style="padding-bottom: 75px;">
+  {% include 'EngineeringPage/me_overviw.html'%}
+</div>
 
-{% include 'EngineeringPage/me_overviw.html'%}
-<div style="height: 10vh;"></div>
-{% include 'EngineeringPage/setupSheet.html'%}
-<div style="height: 10vh;"></div>
 <!-- cnc machines -->
 <div class="container">
   {% include 'EngineeringPage/cncMachinesOutter.html'%}

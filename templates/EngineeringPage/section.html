@@ -1,20 +1,73 @@
 {% load static %}
 
-<div class="container my-5 mb-5 pt-5 pb-5">
-    <div class="container px-5 row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1">Machine Simulation</h1>
-        <p class="lead">This project aims to offer an immersive virtual experience of operating the <strong class="fw-bold">DMG EcoMill 50</strong> and <strong class="fw-bold">Matsuura HPlus 630</strong> CNC milling machines. Through this simulation, users can visualize and simulate machining processes without the need for physical setup.</p>
-      </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-        <video class="w-100 h-100" autoplay muted>
-            <source src="{% static 'videos/MachSim_Video_20231107_101241.mp4'%}" type="video/mp4">
-          </video>
-      </div>
+<div class="container py-5 mt-5 mb-5">
+  <div class="row flex-lg-row align-items-center g-5 py-1">
+    <div class="container col-10 col-sm-8 col-lg-6 justify-content-center">
+      <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5 justify-content-center">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4" style="background-image: url('unsplash-photo-1.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h5 class="pt-5 mt-5 mb-4 display-7 lh-1 fw-bold">DMG ECOMILL 50</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4" style="background-image: url('unsplash-photo-1.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h5 class="pt-5 mt-5 mb-4 display-7 lh-1 fw-bold">Matsuura H-PLUS 630</h5>
+            </div>
+          </div>
+        </div>
 
       
-
-   
-
-    </div>    
+    </div>
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold lh-1">Machine Simulation</h1>
+      <p class="lead mb-2">This project aims to offer an immersive virtual experience of operating the <strong class="fw-bold">DMG EcoMill 50</strong> and <strong class="fw-bold">Matsuura HPlus 630</strong> CNC milling machines. Through this simulation, users can visualize and simulate machining processes without the need for physical setup.</p>
+    </div>
   </div>
+
+
+  <div class="row g-4 py-2 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+    <div class="feature col">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+      </div>
+      <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+      <a href="#" class="icon-link">
+        Call to action
+        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+  </div>
+
+
+ 
+
+</div>
+
