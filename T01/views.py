@@ -46,3 +46,6 @@ def locationFromCords(request):
 
 def engineeringPage(requests):
     return render(requests,f'EngineeringPage/engineeringPage.html')
+
+def gantchart(requests):
+    return render(requests,'ganttChart/ganttchart.html')
