@@ -29,18 +29,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="{% static 'contact.css'%}">
     <link rel="icon" href="{% static 'j.png'%}" type="image/x-icon"/>
-    <link rel="stylesheet" href="https://bootswatch.com/5/cosmo/bootstrap.css">
 
   </head>
 
 
-  <body class="cover-container" style="background-color: #ffffff;" >
+
+  <body class="cover-container"  >
     {% include 'components/header.html' %}
       {% block content%}
       {% endblock %}
   <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="{% static 'location.js' %}"></script>
+  <!-- <script src="{% static 'location.js' %}"></script> -->
   <script src="{% static 'button.js' %}"></script>
 
     </body>
